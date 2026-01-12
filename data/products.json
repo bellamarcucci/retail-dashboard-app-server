@@ -1,0 +1,207 @@
+[
+  {
+    "id": 1,
+    "name": "Projeto Clínica Pequena",
+    "category": "project",
+    "price": 5000,
+    "description": "Projeto completo para clínicas de até 50m².",
+    "image": "./images/proj-1.png",
+    "stock": 10,
+    "reviews": [
+      {
+        "rating": 5,
+        "comment": "Excelente serviço, superou minhas expectativas!"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Projeto Clínica Média",
+    "category": "project",
+    "price": 8000,
+    "description": "Ideal para espaços entre 50m² e 150m².",
+    "image": "./images/proj-2.png",
+    "stock": 6,
+    "reviews": []
+  },
+  {
+    "id": 3,
+    "name": "Projeto Clínica Grande",
+    "category": "project",
+    "price": 12000,
+    "description": "Complexos clínicos acima de 150m².",
+    "image": "./images/proj-3.png",
+    "stock": 3,
+    "reviews": []
+  },
+  {
+    "id": 4,
+    "name": "Projeto Hospitalar Médio",
+    "category": "project",
+    "price": 25000,
+    "description": "Estruturas hospitalares de média complexidade.",
+    "image": "./images/proj-4.png",
+    "stock": 3,
+    "reviews": []
+  },
+  {
+    "id": 5,
+    "name": "Projeto Hospitalar Grande",
+    "category": "project",
+    "price": 45000,
+    "description": "Centros médicos de alta complexidade.",
+    "image": "./images/proj-5.png",
+    "stock": 2,
+    "reviews": []
+  },
+  {
+    "id": 6,
+    "name": "Consultoria RDC-50",
+    "category": "feature",
+    "price": 1500,
+    "description": "Adequação completa às normas da ANVISA.",
+    "image": "./images/feat-1.png",
+    "stock": 50,
+    "reviews": []
+  },
+  {
+    "id": 7,
+    "name": "Design de Interiores 3D",
+    "category": "feature",
+    "price": 2000,
+    "description": "Renderização realista dos ambientes.",
+    "image": "./images/feat-2.png",
+    "stock": 50,
+    "reviews": []
+  },
+  {
+    "id": 8,
+    "name": "Projeto Luminotécnico",
+    "category": "feature",
+    "price": 1200,
+    "description": "Estudo de luz para conforto e eficiência.",
+    "image": "./images/feat-3.png",
+    "stock": 50,
+    "reviews": []
+  },
+  {
+    "id": 9,
+    "name": "Paisagismo Terapêutico",
+    "category": "feature",
+    "price": 1800,
+    "description": "Jardins que auxiliam na recuperação.",
+    "image": "./images/feat-4.png",
+    "stock": 50,
+    "reviews": []
+  },
+  {
+    "id": 10,
+    "name": "Acústica Hospitalar",
+    "category": "feature",
+    "price": 1600,
+    "description": "Isolamento acústico para consultórios.",
+    "image": "./images/feat-5.png",
+    "stock": 50,
+    "reviews": []
+  },
+  {
+    "id": 11,
+    "name": "Fluxo Operacional",
+    "category": "feature",
+    "price": 1400,
+    "description": "Otimização de tráfego de pacientes.",
+    "image": "./images/feat-6.png",
+    "stock": 50,
+    "reviews": []
+  },
+  {
+    "id": 12,
+    "name": "Sinalização Visual",
+    "category": "feature",
+    "price": 900,
+    "description": "Wayfinding e identidade visual.",
+    "image": "./images/feat-7.png",
+    "stock": 50,
+    "reviews": []
+  },
+  {
+    "id": 13,
+    "name": "Mobiliário Ergonomico",
+    "category": "feature",
+    "price": 3000,
+    "description": "Especificação de móveis certificados.",
+    "image": "./images/feat-8.png",
+    "stock": 20,
+    "reviews": []
+  },
+  {
+    "id": 14,
+    "name": "Gestão de Obra",
+    "category": "feature",
+    "price": 5000,
+    "description": "Acompanhamento técnico presencial.",
+    "image": "./images/feat-9.png",
+    "stock": 5,
+    "reviews": []
+  },
+  {
+    "id": 15,
+    "name": "Aprovação LTA",
+    "category": "feature",
+    "price": 2500,
+    "description": "Tramitação na Vigilância Sanitária.",
+    "image": "./images/feat-10.png",
+    "stock": 50,
+    "reviews": []
+  },
+  {
+    "id": 16,
+    "name": "Sustentabilidade LEED",
+    "category": "feature",
+    "price": 3500,
+    "description": "Consultoria para certificação verde.",
+    "image": "./images/feat-11.png",
+    "stock": 50,
+    "reviews": []
+  },
+  {
+    "id": 17,
+    "name": "Automação Predial",
+    "category": "feature",
+    "price": 4000,
+    "description": "Sistemas inteligentes de controle.",
+    "image": "./images/feat-12.png",
+    "stock": 50,
+    "reviews": []
+  },
+  {
+    "id": 18,
+    "name": "Expansão Futura",
+    "category": "feature",
+    "price": 1000,
+    "description": "Planejamento para crescimento da planta.",
+    "image": "./images/feat-13.png",
+    "stock": 50,
+    "reviews": []
+  },
+  {
+    "id": 19,
+    "name": "Conforto Térmico",
+    "category": "feature",
+    "price": 1100,
+    "description": "Estudo de ventilação e climatização.",
+    "image": "./images/feat-14.png",
+    "stock": 49,
+    "reviews": []
+  },
+  {
+    "id": 20,
+    "name": "Identidade Olfativa",
+    "category": "feature",
+    "price": 800,
+    "description": "Marketing sensorial para recepção.",
+    "image": "./images/feat-15.png",
+    "stock": 49,
+    "reviews": []
+  }
+]
