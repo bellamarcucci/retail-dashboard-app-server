@@ -6,7 +6,7 @@
     "price": 5000,
     "description": "Projeto completo para clínicas de até 50m².",
     "image": "./images/proj-1.png",
-    "stock": 10,
+    "stock": 38,
     "reviews": [
       {
         "rating": 5,
@@ -21,7 +21,7 @@
     "price": 8000,
     "description": "Ideal para espaços entre 50m² e 150m².",
     "image": "./images/proj-2.png",
-    "stock": 6,
+    "stock": 7,
     "reviews": []
   },
   {
@@ -31,7 +31,7 @@
     "price": 12000,
     "description": "Complexos clínicos acima de 150m².",
     "image": "./images/proj-3.png",
-    "stock": 3,
+    "stock": 16,
     "reviews": []
   },
   {
@@ -41,7 +41,7 @@
     "price": 25000,
     "description": "Estruturas hospitalares de média complexidade.",
     "image": "./images/proj-4.png",
-    "stock": 3,
+    "stock": 8,
     "reviews": []
   },
   {
@@ -51,7 +51,7 @@
     "price": 45000,
     "description": "Centros médicos de alta complexidade.",
     "image": "./images/proj-5.png",
-    "stock": 2,
+    "stock": 5,
     "reviews": []
   },
   {
@@ -71,7 +71,7 @@
     "price": 2000,
     "description": "Renderização realista dos ambientes.",
     "image": "./images/feat-2.png",
-    "stock": 50,
+    "stock": 70,
     "reviews": []
   },
   {

@@ -11,18 +11,32 @@ const DATA_FILE = path.join(__dirname, 'data', 'products.json');
 app.use(cors());
 app.use(bodyParser.json());
 
-// Helper to read data
+// Functions
+
+// 1. Function to READ data from the JSON file
 const readData = () => {
-    const data = fs.readFileSync(DATA_FILE);
-    return JSON.parse(data);
+    try {
+        const data = fs.readFileSync(DATA_FILE, 'utf8');
+        return JSON.parse(data);
+    } catch (error) {
+        console.error("Erro ao ler o arquivo JSON:", error);
+        return [];
+    }
 };
 
-// Helper to write data
+// 2. Function to save data to the JSON file 
 const writeData = (data) => {
-    fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2));
+    try {
+        fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2));
+        console.log("Dados salvos com sucesso no products.json");
+    } catch (error) {
+        console.error("Erro ao salvar no arquivo JSON:", error);
+    }
 };
 
-// GET Products
+// API Endpoints
+
+// GET products
 app.get('/api/products', (req, res) => {
     const products = readData();
     res.json(products);
@@ -51,13 +65,14 @@ app.post('/api/review/:id', (req, res) => {
     }
 });
 
-// POST Purchase (Checkout)
+
+// POST: Checkout
 app.post('/api/purchase', (req, res) => {
-    const { cart } = req.body; // Expects array of IDs and quantities
-    let products = readData();
+    const { cart } = req.body;
+    let products = readData(); // Lê o arquivo atual
     let success = true;
 
-    // Check stock first
+    // Check stock
     cart.forEach(item => {
         const product = products.find(p => p.id == item.id);
         if (!product || product.stock < item.quantity) {
@@ -66,29 +81,37 @@ app.post('/api/purchase', (req, res) => {
     });
 
     if (success) {
+        // Update stock
         cart.forEach(item => {
             const index = products.findIndex(p => p.id == item.id);
-            products[index].stock -= item.quantity;
+            if (index !== -1) {
+                products[index].stock -= item.quantity;
+            }
         });
-        writeData(products);
-        res.json({ success: true, message: 'Purchase successful' });
+
+        // Save updated stock to file
+        writeData(products); 
+        
+        res.json({ success: true, message: 'Compra realizada!' });
     } else {
-        res.status(400).json({ success: false, message: 'Not enough stock' });
+        res.status(400).json({ success: false, message: 'Estoque insuficiente.' });
     }
 });
 
-// POST Admin Stock Update
+// POST: Update stock (Admin) 
 app.post('/api/admin/stock', (req, res) => {
     const { id, quantity } = req.body;
     let products = readData();
+    
     const index = products.findIndex(p => p.id == id);
     
     if (index !== -1) {
-        products[index].stock += Number(quantity);
+        products[index].stock += Number(quantity); 
         writeData(products);
-        res.json({ success: true });
+
+        res.json({ success: true, newStock: products[index].stock });
     } else {
-        res.status(404).send('Product not found');
+        res.status(404).send('Produto não encontrado');
     }
 });
 
@@ -106,7 +129,7 @@ app.get('/api/admin/dashboard', (req, res) => {
         totalStock: 0,
         positiveReviews: 0,
         negativeReviews: 0,
-        productSalesPotential: [] // In a real app this would be actual sales history
+        productSalesPotential: []
     };
 
     products.forEach(p => {
@@ -132,6 +155,7 @@ app.get('/api/admin/dashboard', (req, res) => {
     res.json(stats);
 });
 
+// Iniciar servidor
 app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+    console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
