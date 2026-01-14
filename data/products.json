@@ -6,7 +6,7 @@
     "price": 5000,
     "description": "Projeto completo para clínicas de até 50m².",
     "image": "./images/proj-1.png",
-    "stock": 38,
+    "stock": 39,
     "reviews": [
       {
         "rating": 5,
@@ -21,8 +21,13 @@
     "price": 8000,
     "description": "Ideal para espaços entre 50m² e 150m².",
     "image": "./images/proj-2.png",
-    "stock": 7,
-    "reviews": []
+    "stock": 6,
+    "reviews": [
+      {
+        "rating": 1,
+        "comment": "Pessimo atendimento."
+      }
+    ]
   },
   {
     "id": 3,
@@ -31,8 +36,33 @@
     "price": 12000,
     "description": "Complexos clínicos acima de 150m².",
     "image": "./images/proj-3.png",
-    "stock": 16,
-    "reviews": []
+    "stock": 15,
+    "reviews": [
+      {
+        "rating": 5,
+        "comment": "Muito bom!"
+      },
+      {
+        "rating": 4,
+        "comment": "legal"
+      },
+      {
+        "rating": 5,
+        "comment": "www"
+      },
+      {
+        "rating": 1,
+        "comment": "wwww"
+      },
+      {
+        "rating": 5,
+        "comment": "ddd"
+      },
+      {
+        "rating": 3,
+        "comment": "ddd"
+      }
+    ]
   },
   {
     "id": 4,
@@ -81,8 +111,13 @@
     "price": 1200,
     "description": "Estudo de luz para conforto e eficiência.",
     "image": "./images/feat-3.png",
-    "stock": 50,
-    "reviews": []
+    "stock": 49,
+    "reviews": [
+      {
+        "rating": 5,
+        "comment": "good"
+      }
+    ]
   },
   {
     "id": 9,
@@ -92,7 +127,12 @@
     "description": "Jardins que auxiliam na recuperação.",
     "image": "./images/feat-4.png",
     "stock": 50,
-    "reviews": []
+    "reviews": [
+      {
+        "rating": 3,
+        "comment": "Gostei, mas poderia ser melhor."
+      }
+    ]
   },
   {
     "id": 10,
@@ -141,7 +181,7 @@
     "price": 5000,
     "description": "Acompanhamento técnico presencial.",
     "image": "./images/feat-9.png",
-    "stock": 5,
+    "stock": 4,
     "reviews": []
   },
   {
